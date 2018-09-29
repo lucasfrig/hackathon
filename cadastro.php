@@ -1,3 +1,33 @@
+<?php
+    // Testa os valores em POST
+    if(isset($_POST['cadastrar'])){
+
+            //Chama a conexão
+        include_once 'conexao.php';
+
+        //Recebe valores
+
+        $nome = $_POST["nome"];
+        $classificacao = $_POST["classificacao"];
+        $plantar = $_POST["plantar"];
+        $colheita = $_POST["colheita"];
+        $beneficio = $_POST["beneficio"];
+
+                // Recebe valores do banco
+        $cadastro_bd = pg_query($banco, "INSERT INTO ALIMENTO (NOME, CLASSIFICACAO, PLANTAR, COLHEITA, BENEFICIO) VALUES ('$nome', '$classificacao', '$plantar', '$colheita', '$beneficio')");
+
+                // Comparação com o banco para logar
+        if($cadastro_bd){
+           echo "<script> alert('Cadastrado com sucesso!'); </script>"; 
+        }else{ 
+            echo "<script> alert('Erro no cadastro!'); </script>";
+        }
+                     
+            
+    }
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -183,34 +213,34 @@ label {
     <div class="signup__overlay"></div>
   </div>
   <div class="container__child signup__form">
-    <form action="#">
+    <form method="post">
       <div class="form-group">
         <label for="username">Nome do alimento</label>
-        <textarea input class="form-control" rows="1" cols="40"  name="nome" id="nome" required />ex: Banana </textarea>
+        <textarea input class="form-control" rows="1" cols="40"  placeholder="Ex: Amora" name="nome" id="nome"/></textarea>
       </div>
       <div class="form-group">
         <label for="email">Classificação</label>
-        <textarea input class="form-control" rows="1" cols="40"  name="classificacao" id="classificacao"required />ex: Fruto, hortaliça...</textarea>
-      </div>
+        <textarea input class="form-control" rows="1" cols="40"  name="classificacao" placeholder="Ex:Fruta" id="classificacao"/></textarea>
+      </div> 
       
       <div class="form-group">
         <label for="password">Como plantar</label>
-        <textarea input class="form-control" rows="2" cols="40" name="plantar" id="plantar"  />ex: Semeie as sementes diretamente... </textarea>
+        <textarea input class="form-control" rows="2" cols="40" name="plantar" id="plantar" placeholder="Como é feita a plantação" /></textarea>
       </div>
       
       <div class="form-group">
         <label for="password">Colheita</label>
-        <textarea input class="form-control" rows="2" cols="40"   name="colheita" id="colheita"  />ex: A colheita da rúcula pode ser feita...</textarea>
+        <textarea input class="form-control" rows="2" cols="40" placeholder="Como é feita a colheita" name="colheita" id="colheita"/></textarea>
       </div>
       
       <div class="form-group">
         <label for="passwordRepeat">Benefício</label>
-        <textarea input class="form-control" rows="2" cols="40" name="beneficio" id="beneficio"  />ex: Melhor a visão e saúde da pele... </textarea>
+        <textarea input class="form-control" rows="2" cols="40" placeholder="Beneficios do alimento" name="beneficio" id="beneficio"  /></textarea>
       </div>
       <div class="m-t-lg">
         <ul class="list-inline">
           <li>
-            <input class="btn btn--form" type="submit" value="Cadastrar alimento" />
+            <input class="btn btn--form" type="submit" value="Cadastrar alimento" id="cadastrar" name="cadastrar" />
           </li>
           
         </ul>
