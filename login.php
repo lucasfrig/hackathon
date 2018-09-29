@@ -1,4 +1,16 @@
+<php
+  <?php
+    // Testa os valores em POST
+    if(isset($_POST['enviar'])){
+        
+        //Chama a conexão
+        include_once 'conexao.php';
 
+        $login = $_POST["login"];
+        $senha
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -52,15 +64,16 @@ padding : 50px 0;
 		    <form class="login-form">
   <div class="form-group">
     <label for="exampleInputEmail1" >Nome do administrador</label>
-    <input type="text" class="form-control" placeholder="">
+    <input type="text" class="form-control" placeholder="" id="login" name="login">
     
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1" >Senha</label>
-    <input type="password" class="form-control" placeholder="">
+    <input type="password" class="form-control" placeholder="" id="senha" name="senha">
   </div>
-  
-  
+  <center>
+  <button type="button" class="btn btn-success">Entrar</button>
+</center>
  
 </form>
 <div class="copy-text">Criado por Lucas Frizon, Artur Quatrin e Gabriel Gubert</div>
