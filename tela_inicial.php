@@ -26,6 +26,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       
     <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/novo.css">
       
   </head>
 
@@ -41,12 +42,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsDefault">
                 <ul class="navbar-custom navbar-nav ml-auto">
-                    
-                    
-                  <left></left> <li class="nav-item">
-                    <a class="nav-link" href="sobre.php">Sobre nós</a>
-                    </li>
-                    
+                     
                     <li class="nav-item">
                     <a class="nav-link" href="login.php">Administrador</a>
                     </li>
@@ -56,7 +52,7 @@
                     </li> 
                     
                     <li class="nav-item active">
-                    <a class="nav-link" href="login.php" >Sair  <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="pagina_inicial.php" >Sair  <span class="sr-only">(current)</span></a>
                     </li>
                     
                     
@@ -91,7 +87,8 @@
 <div class="container content-section">
   <div class="row justify-content-center">
     <div class="col-md-8">
-            <h2 class="text-center">PEACH.</h2>
+            <h2 class="text-center"></h2>
+            <center><h1>PEACH.</h1></center>
       <p>A pobreza é a situação social e econômica na qual um indivíduo ou um grupo carece de certa forma dos elementos básicos para a subsistência pessoal. A pobreza é uma realidade que pode ser analisada a partir de várias perspectivas. Costuma-se dizer que uma nação é pobre quando a maioria da população não tem suas necessidades básicas atendidas. As necessidades básicas são a água, alimento e o agasalho, a habitação e os cuidados médicos.</p>
             
             <p>Tendo o uso de roupas e/ou agasalhos como necessidade básica do ser humano, torna-se fundamental a distribuição dos mesmos, principalmente em regiões de frio frequente ou em regiões em que desastres naturais são um problema recorrente. </p>
@@ -107,7 +104,8 @@
 <footer>
 <div class="container text-center">
     <p class="credits">
-        Gabriel Gubert 2018<br/>
+        Lucas Frizon, Artur Quatrin e Gabriel Gubert <br/>
+        2018
         
     </p>
 </div>
