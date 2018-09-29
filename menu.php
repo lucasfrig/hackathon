@@ -168,7 +168,7 @@
             <h1>Nós somos PEACH.</h1>        
             <h3>Descubra alguns alimentos saudáveis</h3>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Confira</button>
+        <button class="btn btn-hero btn-lg" type="button" onClick="Slide1()">Confira</button>
       </div>
     </div>
     <div class="item slides">
@@ -178,7 +178,7 @@
             <h1>Nós somos PEACH.</h1>        
             <h3>Como perder peso com saúde</h3>
         </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">Confira</button>
+        <button class="btn btn-hero btn-lg" type="button" onClick="Slide2()">Confira</button>
       </div>
     </div>
     <div class="item slides">
@@ -188,7 +188,7 @@
             <h1>Nós somos PEACH.</h1>        
             <h3>Como ganhar massa magra</h3>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Confira</button>
+        <button class="btn btn-hero btn-lg" type="button" onClick="Slide3()">Confira</button>
       </div>
     </div>
     <div class="item slides">
@@ -198,11 +198,39 @@
             <h1>Nós somos PEACH.</h1>        
             <h3>O problema gerado por agrotóxicos</h3>
         </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">Confira</button>
+        <button class="btn btn-hero btn-lg" type="button" onClick="Slide4()">Confira</button>
       </div>
     </div>
   </div> 
 </div>	<script type="text/javascript">
+ 
+ 
+  function Slide1()
+{
+location.href="alimento_saudavel.php"
+}
+  
+   function Slide2()
+{
+location.href="perder_peso.php"
+}
+  
+    function Slide3()
+{
+location.href="ganhar_massa.php"
+}
+  
+    function Slide4()
+{
+location.href="agrotoxico.php"
+}
+  
+
+
+  </script>
+
+
+
 		</script>
 </body>
 </html>
