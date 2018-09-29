@@ -42,13 +42,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsDefault">
                 <ul class="navbar-custom navbar-nav ml-auto">
-                     
+                      
                     <li class="nav-item">
                     <a class="nav-link" href="login.php">Administrador</a>
                     </li>
    
                     <li class="nav-item">
-                        <a class="nav-link" href="http://example.com">Alimentos</a>
+                        <a class="nav-link" href="menu.php">Alimentos</a>
                     </li> 
                     
                     <li class="nav-item active">
@@ -89,11 +89,13 @@
     <div class="col-md-8">
             <h2 class="text-center"></h2>
             <center><h1>PEACH.</h1></center>
-      <p>A pobreza é a situação social e econômica na qual um indivíduo ou um grupo carece de certa forma dos elementos básicos para a subsistência pessoal. A pobreza é uma realidade que pode ser analisada a partir de várias perspectivas. Costuma-se dizer que uma nação é pobre quando a maioria da população não tem suas necessidades básicas atendidas. As necessidades básicas são a água, alimento e o agasalho, a habitação e os cuidados médicos.</p>
-            
-            <p>Tendo o uso de roupas e/ou agasalhos como necessidade básica do ser humano, torna-se fundamental a distribuição dos mesmos, principalmente em regiões de frio frequente ou em regiões em que desastres naturais são um problema recorrente. </p>
-
-            <p> No entanto, o controle de estoque e distribuição desses agasalhos é precário e quase inexistente , pois nem sempre as doações contemplam as famílias mais necessitadas.</p>
+      <div align="center"><p>A Peach é uma equipe formada por Artur Quatrin, Gabriel Gubert e Lucas Frizon, que tem como objetivo criar um site organizado e simplificado , com a finalidade contribuir para o aprendizado das pessoas que tem interesse em viver de forma mais saudável. 
+        <p>Organizamos o site com vários opções para ter uma alimentação mais saudável, contendo legumes, frutas, frutos e hortaliças. Os usuários tem a possibilidade de ver que alimentos são saudáveis e na mesma página pode aprender como cultivar em sua casa, utilizando seu pátio ou em vasos. 
+            <p>Também é possível escolher alguns alimentos visando um objetivo, como por exemplo : ganhar massa muscular, perder peso com saúde ou dietas com uma alimentação saudável. Além disso, alertamos sobre os graves problemas do uso do agrotóxico que é muitas vezes usado no cultivo das plantas, acarretando diversos problemas para a saúde dos consumidores destes alimentos.
+        </p>
+ </p>
+</p>
+           </div> 
 
     </div>
   </div>
